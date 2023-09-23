@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homein.css">
+    <title>Your Website</title>
+    <style>
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; 
+        }
+
+        body {
+            margin: 0; 
+        }
+
+        header {
+            background-color: #440707;
+            color: rgb(245, 240, 240);
+            padding: 10px;
+        }
+
+        header ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        header li {
+            margin: 0 10px;
+        }
+
+        main {
+            flex: 1; 
+            padding: 20px;
+        }
+
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .responsive-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px;
+        }
+
+        footer {
+            background-color: #3b0505;
+            color: white;
+            padding: 10px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+        .button {
+background-color: #11126d;
+ color: #ecebf1;
+padding: 10px 20px;
+border: none;
+ border-radius: 5px;
+text-decoration: none;
+cursor: pointer;
+ margin-right: 20px;
+        }
+.button:hover {
+background-color: #333;
+
+        }
+
+        .social-icons {
+            margin-top: 10px;
+        }
+
+.dropdown {
+position: relative;
+ display: inline-block;
+}
+
+.dropdown-content {
+ display: none;
+ position: absolute;
+ background-color: #fdfdfd;
+ min-width: 160px;
+ z-index: 1;
+}
+
+ .dropdown-content a {
+ padding: 12px 16px;
+ text-decoration: none;
+display: block;
+color: #333;
+ }
+
+.dropdown-content a:hover {
+background-color: #ddd;
+ }
+
+ .dropdown:hover .dropdown-content {
+ display: block;
+ }
+
+
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <li id="logo"><img src="clay.jpg" alt="Logo" width="50" height="50"></li>
+                    <li><a href="scroll.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="regist.html">Registration</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="image-container">
+                <img src="office1.jpg" alt="Office 1" class="responsive-image">
+                <img src="office3.jpg" alt="Office 3" class="responsive-image">
+                <img src="office5.jpg" alt="Office 5" class="responsive-image">
+                <img src="office6.jpg" alt="Office 6" class="responsive-image">
+                <img src="office2.jpg" alt="Office 2" class="responsive-image">
+            </div><br><br>
+            <a href="jsevent.html" class="button">click here</a>
+        </main>
+
+        <footer>
+            &copy; Rakhi
+            <address>Infopark, Kochi</address>
+            <div class="social-icons">
+                <a href="http://www.linkedin.com"><img src="link.jpg" alt="LinkedIn" height="20"></a>
+                <a href="http://www.instagram.com"><img src="instag.jpg" alt="Instagram" height="20"></a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
+

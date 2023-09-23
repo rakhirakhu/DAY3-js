@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    
+    <style>
+        body{
+background-image:url(ba1.jpg);
+background-position: center;
+background-size:cover;
+position: relative;   
+height: 110vh;
+}
+        .contact-form {
+            margin-top: 10px;
+        }
+
+        .form-group {
+            margin-bottom: 10px;
+        }
+
+        .form-label {
+            display: block;
+            font-size: 18px;
+            margin-bottom: 3px;
+        }
+
+        .form-input {
+            width: 45%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-textarea {
+            width: 70%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+            function validateFirstName() {
+            var firstNameField = document.getElementById("firstName");
+            var firstName = firstNameField.value.trim();
+            var firstNameError = document.getElementById("firstNameError");
+
+            if (firstName === "") {
+                firstNameError.textContent = "First Name is required";
+                firstNameField.style.borderColor = "red";
+            } else {
+                firstNameError.textContent = "";
+                firstNameField.style.borderColor = "";
+            }
+        }
+
+        function validateLastName() {
+            var lastNameField = document.getElementById("lastName");
+            var lastName = lastNameField.value.trim();
+            var lastNameError = document.getElementById("lastNameError");
+
+            if (lastName === "") {
+                lastNameError.textContent = "Last Name is required";
+                lastNameField.style.borderColor = "red";
+            } else {
+                lastNameError.textContent = "";
+                lastNameField.style.borderColor = "";
+            }
+        }
+        function validateEmail() {
+            var emailField = document.getElementById("email");
+            var email = emailField.value;
+            var emailError = document.getElementById("emailError");
+
+            if (email === "") {
+                emailError.textContent = "Email Address is required";
+                emailField.style.borderColor = "red";
+            } else {
+                emailError.textContent = "";
+                emailField.style.borderColor = "";
+            }
+        }
+        function validateComment() {
+            var commentField = document.getElementById("comment");
+            var comment = commentField.value;
+            var commentError = document.getElementById("commentError");
+
+            if (comment === "") {
+                commentError.textContent = "add a comment";
+                comment.style.borderColor = "red";
+            } else {
+                commentError.textContent = "";
+                commentField.style.borderColor = "";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h2>Contact Us</h2>
+        <p><a href="tel:6238761265">6238761265</a></p>
+        <p><a href="mailto:rakhirakhu9207@gmail.com">rakhirakhu9207@gmail.com</a></p>
+        <address>Infopark, Kochi</address>
+<div>
+        
+        
+            First Name: <input type="text" id="firstName" name="firstName" placeholder="First Name" onfocusout="validateFirstName()" required><br>
+            <span id="firstNameError" style="color: red;"></span><br>
+
+            Last Name: <input type="text" id="lastName" name="lastName" placeholder="Last Name" onfocusout="validateLastName()" required><br>
+            <span id="lastNameError" style="color: red;"></span><br>
+            Email Address: <input type="email" id="email" name="email" placeholder="Email Address" onfocusout="validateEmail()" required><br>
+            <span id="emailError" style="color: red;"></span><br>
+            Comment: <input type="text" id="comment" name="comment" placeholder="Comment " onfocusout="validateComment()" required><br>
+                <span id="commentError" style="color: red;"></span><br>
+                
+                <button type="submit" class="form-button">Submit</button>
+            
+        </div>
+        
+        
+        <div class="social-icons">
+            <a href="http://www.linkedin.com"><img src="link.jpg" height="20" alt="LinkedIn"></a>
+            <a href="http://www.instagram.com"><img src="instag.jpg" height="20" alt="Instagram"></a>
+        </div>
+    </div>
+    <div
+</body>
+</html>
+
